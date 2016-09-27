@@ -26,10 +26,8 @@
     <!--<name>TrustedAnalytics Parent</name>-->
     <!--<description>TrustedAnalytics : Large Scale Graph Analytics</description>-->
     <!--<inceptionYear>2013</inceptionYear>-->
+ 
 
-  <!--<properties>-->
-    <!--<scala.version>2.7.0</scala.version>-->
-  <!--</properties>-->
 
     <repositories>
     <repository>
@@ -314,6 +312,7 @@
                   <parallel>false</parallel>
                   <stdout>FTD</stdout>
                   <argLine>-Xmx1024m -XX:PermSize=256m -XX:MaxDirectMemorySize=1000m</argLine>
+                    <parallel>true</parallel>
                 </configuration>
                 <executions>
                   <execution>
